@@ -22,7 +22,10 @@ NEXT_PUBLIC_SUPABASE_ANON_KEY=REPLACE_WITH_YOUR_ANON_PUBLIC_KEY
 
  The keys are the same with the one you got [here](https://github.com/clarencepenz/scraper/tree/main#get-keys). The only difference is the variable name starting with `NEXT_PUBLIC`
 
-Run the development server:
+
+Run `yarn test` 
+
+Next, start the development server:
 
 ```bash
 npm run dev
