@@ -9,11 +9,13 @@ export default function Home() {
   const [err, setErr] = useState<boolean>(false);
 
   useEffect(() => {
+    // Fetch the stored data from the supabase table scraper
     async function fetchJobs() {
       const { data, error } = await supabase
         .from("scraper")
         .select()
         .order("created_at", { ascending: false });
+        
       if (error !== null) {
         setErr(true);
       }
